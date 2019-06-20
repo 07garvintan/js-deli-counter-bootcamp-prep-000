@@ -12,12 +12,12 @@ function nowServing (array) {
   }
 }
 
-function currentLine(array) {
-  var line = [];
+
+var line = []
 
 function currentLine(line) {
   var currentLineArray
-  var i;
+  
   if (line.length === 0) {
     return "The line is currently empty."
   }
