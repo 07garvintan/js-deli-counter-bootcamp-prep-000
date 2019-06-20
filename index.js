@@ -14,7 +14,7 @@ function nowServing (array) {
 
 
 
-
+var line = []
 function currentLine(line) {
   var currentLineArray
   
