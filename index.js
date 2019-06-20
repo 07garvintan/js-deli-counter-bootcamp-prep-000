@@ -13,17 +13,15 @@ function nowServing (array) {
 }
 
 
-
-var line = []
-function currentLine(line) {
-  var currentLineArray = []
-  
-  if (line.length === 0) {
+function 
+if (array.length ===0) {
     return "The line is currently empty."
-  }
-  else { for (let i = 0; i < line.length; i++) {
-    currentLineArray[i] = `${1 + i}. ${line[i]}`
-    return `The line is currently: ${currentLineArray}`
-  }
+  } else {
+    var str = "The line is currently:"
+    for (let i =0; i < array.length; i+=1) {
+      str += ` ${i+1}. ${array[i]},`
+    }
+    str = str.slice(0,-1)
+    return str
   }
 }
